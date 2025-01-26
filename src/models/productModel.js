@@ -35,11 +35,6 @@ const productSchema = new Schema({
         min: [0, "Price field has to be a number"]
     },
 
-    image: {
-        type: String,
-        default: "hhtps://picsum.photos/400"
-    },
-
     stock: {
         type: Number,
         default: 0,
@@ -59,7 +54,7 @@ const productSchema = new Schema({
         default: Date.now(),
     },
   },
-  
+
   { timestamps: true }
 );
 
